@@ -5,7 +5,7 @@ import cors from 'cors'
 import  openAIcall  from './test.js'
 
 dotenv.config()
-
+const port = process.env.PORT || 4000;
 
 const app = express()
 app.use(cors())
@@ -37,7 +37,7 @@ app.post('/', async (req, res) => {
   }
 })
 
-app.listen(5000, () => console.log('AI server started on http://localhost:5000'))
+app.listen(port, () => console.log('AI server started on http://localhost:5000'))
 
 
 
