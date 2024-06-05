@@ -4,7 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "server": "npm run server"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
   },
   "dependencies": {
     "cors": "^2.8.5",
